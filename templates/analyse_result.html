@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyze Results</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Analyze Results</h1>
+        <form class="form" action="/delineation" method="POST" enctype="multipart/form-data">
+
+<!--            upload file -->
+            <label class="label" for="file">Upload CSV file:</label>
+            <input class="input" type="file" id="file" name="file" accept=".csv" required>
+
+<!--            date and time-->
+            <label class="label" for="datetime">Choose date and time:</label>
+            <input class="input" type="datetime-local" id="datetime" name="datetime" required>
+
+<!--            Sumit button-->
+            <button class="button" type="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+</html>
