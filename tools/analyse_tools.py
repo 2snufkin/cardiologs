@@ -1,3 +1,4 @@
+# A utility that contains methods for extracting data from a CSV file (Holter Record)
 def count_tagged_waves(df, wave_name, tag):
     """
      Count the occurrences of a given wave with a given tag.
