@@ -4,9 +4,9 @@ This app is a  HTTP server that analyzes electrocardiography (ECG) delineation d
 ## Introduction
 The server is designed to receive delineation files via a POST request to /delineation endpoint. Upon receiving a delineation file, the server performs the following analyses:
 
-Counts the number of P waves tagged as "premature" and the number of QRS complexes tagged as "premature".
-Calculates the mean heart rate of the recording based on the frequency at which QRS complexes appear.
-Determines the minimum and maximum heart rates along with the time at which they occurred.
++ Counts the number of P waves tagged as "premature" and the number of QRS complexes tagged as "premature".
++ Calculates the mean heart rate of the recording based on the frequency at which QRS complexes appear.
++ Determines the minimum and maximum heart rates along with the time at which they occurred.
 
 ## How to use the application
 For this application, you will need to have a Python on your machine
