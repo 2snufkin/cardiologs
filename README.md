@@ -1,3 +1,15 @@
+# ECG Delineation Analysis Server
+This app is a  HTTP server that analyzes electrocardiography (ECG) delineation data and provides measurements to a physician.
+
+## Introduction
+The server is designed to receive delineation files via a POST request to /delineation endpoint. Upon receiving a delineation file, the server performs the following analyses:
+
+Counts the number of P waves tagged as "premature" and the number of QRS complexes tagged as "premature".
+Calculates the mean heart rate of the recording based on the frequency at which QRS complexes appear.
+Determines the minimum and maximum heart rates along with the time at which they occurred.
+
+## How to use the application
+For this application, you will need to have a Python on your machine
 ### Step 1: Clone the Flask Project
 Clone the Flask project from the Git repository using the `git clone` command:
 ```bash
@@ -6,11 +18,7 @@ git clone <repository_url>
 Replace `<repository_url>` with the URL of the Git repository containing the Flask project.
 
 ### Step 2: Navigate to the Project Directory
-Navigate to the directory of the cloned Flask project:
-```bash
-cd <project_directory>
-```
-Replace `<project_directory>` with the name of the directory where the project was cloned.
+Navigate using with cmd to the cardiologs subfolder of the same directory where the cloned Flask project lie.
 
 ### Step 3: Create a Virtual Environment
 Create a virtual environment using `virtualenv` or `venv`. Here, we'll use `venv`:
