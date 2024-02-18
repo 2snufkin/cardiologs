@@ -1,36 +1,58 @@
-# Holter Record Summary HTTP Server
-
-This HTTP server processes delineation files and provides various measurements to physicians.
-
-## Installation
-
-1. Clone the repository:
+### Step 1: Clone the Flask Project
+Clone the Flask project from the Git repository using the `git clone` command:
 ```bash
-git clone https://github.com/your_username/holter-record-summary.git
+git clone <repository_url>
+```
+Replace `<repository_url>` with the URL of the Git repository containing the Flask project.
+
+### Step 2: Navigate to the Project Directory
+Navigate to the directory of the cloned Flask project:
+```bash
+cd <project_directory>
+```
+Replace `<project_directory>` with the name of the directory where the project was cloned.
+
+### Step 3: Create a Virtual Environment
+Create a virtual environment using `virtualenv` or `venv`. Here, we'll use `venv`:
+```bash
+python -m venv venv
+```
+This command creates a virtual environment named `venv` in the project directory.
+
+### Step 4: Activate the Virtual Environment
+Activate the virtual environment:
+- On Windows:
+```bash
+venv\Scripts\activate
+```
+- On macOS and Linux:
+```bash
+source venv/bin/activate
 ```
 
-2. Install dependencies:
+### Step 5: Install Dependencies
+Install the dependencies listed in the `requirements.txt` file:
 ```bash
 pip install -r requirements.txt
 ```
 
-## Usage
-
-1. Start the server:
+### Step 6: Set Flask App
+Set the Flask app environment variable (if required):
+- On Windows:
 ```bash
-python app.py
+set FLASK_APP=app.py
+```
+- On macOS and Linux:
+```bash
+export FLASK_APP=app.py
 ```
 
-2. Navigate to `http://localhost:5000/delineation`.
+### Step 7: Run the Flask App
+Run the Flask application using the `flask run` command:
+```bash
+flask run
+```
 
-3. Upload the csv file and provide with a date and time.
-
-4. A csv file will be downloaded immediately. The file contains the following:
-- The number of P waves tagged "premature" as well as the number of QRS complexes tagged "premature"
-- The mean heart rate of the recording 
-- The minimum and maximum heart rate, each with the time at which they happened. 
-
-## Endpoints
-
-- `POST /delineation`: Upload a delineation file.
-
+### Step 8: Access the Application
+[Access the Flask application in a web browser by navigating to the URL provided in the terminal.
+](http://127.0.0.1:5000/delineation)http://127.0.0.1:5000/delineation
