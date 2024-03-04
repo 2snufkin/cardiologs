@@ -13,9 +13,8 @@ For this application, you will need to have a Python on your machine
 ### Step 1: Clone the Flask Project
 Clone the Flask project from the Git repository using the `git clone` command:
 ```bash
-git clone <repository_url>
+git clone https://github.com/2snufkin/cardiologs.git
 ```
-Replace `<repository_url>` with the URL of the Git repository containing the Flask project.
 
 ### Step 2: Navigate to the Project Directory
 Navigate using with cmd to the cardiologs subfolder of the same directory where the cloned Flask project lie.
